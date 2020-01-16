@@ -10,6 +10,3 @@ RUN yum install -y wget \
 
 RUN wget https://github.com/hhandoko/cassandra-migration/releases/download/cassandra-migration-0.17/cassandra-migration-0.17-jar-with-dependencies.jar \
     -O cassandra-migration.jar
-
-ENTRYPOINT ["java", "-jar", "cassandra-migration.jar"]
-
